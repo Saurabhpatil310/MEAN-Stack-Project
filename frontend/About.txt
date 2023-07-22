@@ -1,0 +1,1 @@
+This is student management project using MEAN stack technologies.
