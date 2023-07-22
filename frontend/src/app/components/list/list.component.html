@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+      <h4 class='card-title'>Student Data Mainteance</h4>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Rollno</th>
+          <th scope="col">Name</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let student of students">
+          <td>{{student._id}}</td>
+          <td>{{student.rollno}}</td>
+          <td>{{student.name}}</td>
+          <td>
+              <button class="btn btn-danger" (click)="deleteStudent(student)">Delete</button>&nbsp;
+              <button class="btn btn-primary" (click)="updateStudent(student)">Update</button>
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
